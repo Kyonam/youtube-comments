@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Youtube-Comment-AI-Analysis
 
-## Getting Started
+### 빈 폴더 만들기
 
-First, run the development server:
+폴더 이름: 'youtube-comment'로 이름 수정
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> 반드시 폴더명은 `소문자`로 작성
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+### 안티그래비티를 열고 폴더 오픈
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+### Next.js 기반 코드 베이스 구축
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+터미널을 열고
 
-## Learn More
+> npx create-next-app@latest .
 
-To learn more about Next.js, take a look at the following resources:
+---
+### 코드 수정
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- readme.md 파일 내용 삭제
+- public 폴더에 있는 이미지 삭제
+- app/layout.tsx 파일에서 title, description 수정
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+### 프런트 UI 추가 기능 설치
 
-## Deploy on Vercel
+터미널을 열고
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> npx shadcn@latest init
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+### clonecn skill 설치
+
+터미널에서
+
+> npx skills add hunvreus/clonecn --skill clonecn
+
+* 참고: https://github.com/hunvreus/clonecn/blob/main/README.md
+
+---
+### AI 툴킷 설치
+
+터미널에서
+
+> npm install ai @ai-sdk/react @ai-sdk/google zod
+
+---
+### YouTube Data API 키 받기
+
+브라우저에서
+
+> https://console.cloud.google.com/apis 에 접속
+
+---
+### YouTube Data API 키 저장하기
+
+- .env.local 파일 만들기
+- 복사한 API 키값을 `YOUTUBE_API_KEY=` 에 연결
+
+---
+### Gemini API 키 받기
+
+- Google AI Studio에서 발급받은 Gemini API 키를 .env.local 파일에 저장
+
+---
+
+
+
+
+
