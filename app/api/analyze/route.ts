@@ -63,7 +63,7 @@ export async function POST(req: Request) {
     // 2. Analyze with Gemini
     console.log("Sending to Gemini...");
     const { object } = await generateObject({
-      model: google("gemini-3.1-flash-lite-preview"),
+      model: google("gemini-3.1-flash-lite"),
       schema: AnalysisSchema,
       prompt: `유튜브 영상(Video ID: ${videoId})의 최근 댓글들을 분석하여 아래 형식으로 응답하세요.
       **응답 본문의 모든 텍스트는 한국어로 작성해야 합니다.**
